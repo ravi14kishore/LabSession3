@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kisho.mapandphotoapp.SignupPage"
+    tools:showIn="@layout/activity_signup_page"
+    android:background="#02e7fc">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to MapandPhoto App"
+        android:id="@+id/SignupContent_headerTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColorLink="#164ce0"
+        android:textColor="#093ff2"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Create an Account"
+        android:id="@+id/SignupPageContent_createTextView"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/SignupContent_headerTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignupPageContent_FullName"
+        android:hint="Full Name"
+        android:layout_below="@+id/SignupPageContent_createTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/SignupPageContent_SignupButton"
+        android:layout_alignEnd="@+id/SignupPageContent_SignupButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignupPageContent_EmailId"
+        android:hint="Email address"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/SignupPageContent_FullName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/SignupPageContent_FullName"
+        android:layout_alignEnd="@+id/SignupPageContent_FullName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignupPageContent_Username"
+        android:hint="Username"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/SignupPageContent_Password"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/SignupPageContent_Username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:id="@+id/SignupPageContent_SignupButton"
+        android:layout_below="@+id/SignupPageContent_Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#2533cc"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:id="@+id/SignupPageContent_ImageView"
+        android:src="@drawable/imgres"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/SignupPageContent_errorTextView"
+        android:layout_below="@+id/SignupPageContent_Password"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/SignupPageContent_createTextView"
+        android:layout_alignEnd="@+id/SignupPageContent_createTextView"
+        android:visibility="invisible" />
+
+</RelativeLayout>
